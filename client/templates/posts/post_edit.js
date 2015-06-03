@@ -1,3 +1,10 @@
+
+Template.postEdit.helpers ({
+  ownsDocument: function() {
+    return ownsDocument(Meteor.userId(), this);
+  }
+});
+
 Template.postEdit.events({
   'submit form': function(e) {
     e.preventDefault();
