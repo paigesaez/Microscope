@@ -28,7 +28,6 @@ Comments.insert({
   body: 'Interesting project...'
 });
 
-
 Posts.insert({
 title: 'Meteor',
 url: 'http://meteor.com'
