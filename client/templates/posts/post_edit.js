@@ -19,8 +19,8 @@ Template.postEdit.events({
     Posts.update(currentPostId, {$set: postProperties}, function(error) {
       if (error) {
         //display the error to the user
-        alert(error.reason);
-      } else {
+        throwError(error.reason);
+        } else {
         Router.go('postPage', {_id: currentPostId});
       }
     });
@@ -37,3 +37,5 @@ Template.postEdit.events({
   }
 });
 
+// add a way to check if user updates their url to a url that
+// already exists, tell them exists and allow post anyway.
