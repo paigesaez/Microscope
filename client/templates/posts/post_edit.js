@@ -1,3 +1,6 @@
+Template.postEdit.created = function() {
+  Session.set('postEditErrors', {});
+};
 
 Template.postEdit.helpers ({
   ownsDocument: function() {
